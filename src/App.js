@@ -1,10 +1,17 @@
 import './App.css';
+import './index.css'
+import {BrowserRouter , Routes, Route} from "react-router-dom";
+import Homepage from "./pages/homepage";
+import FavoriteCats from "./pages/favoriteCats"
 
 function App() {
   return (
-    <div className="App">
-  App
-    </div>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/favoriteCats" element={<FavoriteCats />} />
+       </Routes>
+      </BrowserRouter>
   );
 }
 
