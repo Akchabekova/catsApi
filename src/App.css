@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.header-menu:active{
-    background-color: blue;
+.header-menu.active{
+   box-shadow: 2px 2px 2px 2px #be7683;
+    border: none;
 
 }
 
