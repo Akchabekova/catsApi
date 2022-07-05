@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from "redux"
 import { composeWithDevTools } from "redux-devtools-extension";
-import favoriteCats from "../pages/favoriteCats";
+
 
 const initialState = {
     favorites: [],
@@ -12,7 +12,7 @@ const storeReducer = ( state = initialState , action ) => {
         case "ADD_TO_FAVORITES" :
            return {...state, favorites: [...state.favorites, action.payload]}
         case "REMOVE_FROM_FAVORITES":
-            return {...state, favorites: [...state.favorites.filter(favoriteCats => favoriteCats.id !== action.payload.id)]}
+            return {...state, favorites: [...state.favorites.filter(cat => cat.id !== action.payload.id)]}
          default:
             return state
 

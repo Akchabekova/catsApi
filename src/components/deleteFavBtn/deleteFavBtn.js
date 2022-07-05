@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DeleteFavBtn = () => {
+const DeleteFavBtn = ({onClick}) => {
     return (
-        <div className="delete-btn">
+        <div onClick={onClick} className="delete-btn">
             <i className='bx bx-x' />
         </div>
     );

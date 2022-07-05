@@ -11,7 +11,7 @@ const Header = () => {
                              className="header-menu bg-transparent hover:bg-pink-600 text-pink-600 font-semibold hover:text-white py-2 px-4 border border-pink-600 hover:border-transparent rounded mr-2 ">
                         Все котики
                     </NavLink>
-                    <NavLink to ="/favoriteCats"
+                    <NavLink to ="/favoritecats"
                              className="header-menu bg-transparent hover:bg-pink-600 text-pink-600 font-semibold hover:text-white py-2 px-4 border border-pink-600 hover:border-transparent rounded mr-2 ">
                         Любимые котики
                     </NavLink>
